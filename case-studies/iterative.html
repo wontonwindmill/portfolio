@@ -1,91 +1,258 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Development Handin</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <h2>Development Project</h2>
-    <p>In this project, I am completing a competitive analysis on three websites with a favoriting function and then using that information to make my own website with a favoriting function.</p>
-    <h4>Reference websites:</h4>
-    <div class="website-links">
-      <a href="https://www.nike.com/">Nike</a>
-      <a href="https://www.wta.org/">Washington Trails Association</a>
-      <a href="https://www.pinterest.com/">Pinterest</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winston's Portfolio</title>
+
+  <link rel="stylesheet" href="../css/case-study-styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../index.html">Winston Hackett</a>
+    <div class="nav-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../docs/resume.pdf">Resume</a>
     </div>
-    <h4>Competitive Analysis Comparison Table:</h4>
-    <table>
-      <tr>
-        <th>-</th>
-        <th>Nike</th>
-        <th>Washington Trails Association</th>
-        <th>Pinterest</th>
-      </tr>
-      <tr>
-        <td>Suggests more items on favorite's page</td>
-        <td>x</td>
-        <td>x</td>
-        <td>o</td>
-      </tr>
-      <tr>
-        <td>Favoriting while browsing</td>
-        <td>o</td>
-        <td>x</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>Filtering in favorite's page </td>
-        <td>o</td>
-        <td>x</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>Home page recommends content based on favorites/prior activity</td>
-        <td>o</td>
-        <td>o</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>Home feed groups content by categories</td>
-        <td>x</td>
-        <td>o</td>
-        <td>o</td>
-      </tr>
-      <tr>
-        <td>Tags in posts</td>
-        <td>o</td>
-        <td>x</td>
-        <td>o</td>
-      </tr>
-    </table>
-    <h4>Summary Paragraph:</h4>
-    <p>
-      All three websites were reasonably well done, with different strengths and weaknesses that influence users. For Nike, the site doesn't allow favoriting while browsing, only after clicking on a product card and also in the cart. This seems like it would encourage users to focus more on finding an individual product they like and navigating to it, rather than saving multiple for later while browsing. Nike also displays content in categories like based off of sport on the homepage, without considering the user's favorite content. To me, this creates a design that funnels users towards products that they already know they want. This makes sense for encouraging users to quickly find the product they want and buy it. The favoriting function seems to be a backup if users have second thoughts, allowing them to put the item they like away to buy later, in either the product page or the cart page. In Nike's case, favoriting seems to be more of a “buy later” function, meant to not interfere with the primary buying experience. Curiously, they do have recommendations in the favorites page, maybe because if a user has already favorite items, they are more suited than the regular user to browse and see further recommendations. For the Washington Trails Association (WTA), favoriting is available nearly everywhere you can see a hike's information. There are also good suggestions on the favorite's page. This seems to encourage users to browse many hikes, and favorite lots that look good. WTA also has tags on the posts that make it even easier to scan and find relevant posts. Pinterest also seems to do browsing well, with favorite's page having pretty limited functionality mostly acting as a history. Instead, the favorites are used to improve the main page, which recommends off of favorited items. Pinterest also allows lots of favoriting, so it is encouraged and an important part of the main feed experience.
+  </div>
+  <!-- making a wrapper element -->
+  <div class="wrapper">
+    
+    <header>
+
+      <h1> Iterative Design: Aster </h1>
+      <h2> Merzia Jilani, Winston Hackett, Fanny Vavrovsky, Akira Nair</h2>
+      <div class="devlink">
+        <!-- <a href="dev-ashy-gamma.vercel.app" class="menu" aria-label="menu button">Vercel Website</a> -->
+      </div>
+
+    </header>
+    <div class="spacing">
+      <div class="sectioncard">
+        <h2> Overview </h2>
+        <p>
+          The goal of this project is to practice following the iterative design process in solving a design problem. In
+          this project,
+          we worked with Aster, a startup that seeks to improve women’s health practices. Pregnant individuals face
+          challenges in managing healthcare documentation for prenatal and postpartum care, leading to incomplete or
+          delayed submissions to the provider. In this project, Aster seeks a cohesive, user-friendly digital solution
+          to
+          streamline this process and improve care efficiency. We collaborated with Aster to create a hi-fi prototype of
+          a
+          mobile app that establishes an easy-to-use interface for pregnant individuals to efficiently complete
+          healthcare
+          forms.
+        </p>
+      </div>
+      <div class="sectioncard">
+        <h2> Initial Sketches </h2>
+        <p>
+          An initial part of the iterative design process involved drafting up sketches for potential designs. Each one
+          of us individually
+          brainstormed two distinctly different flows for the mobile app. We had a variety of ideas!
+        </p>
+        <b>Merzia's sketches </b> 
+        <div class="sketch-container">
+          <div class="sketch-item">
+            <img src="../assets/mjsketch.jpeg" alt="Merzia sketch 1" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/mjsketch2.jpeg" alt="Merzia sketch 2" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/mjsketch3.jpeg" alt="Merzia sketch 3" />
+          </div>
+        </div>
+        <b>Akira's sketches </b> <br/>
+        <div class="sketch-container">
+          <div class="sketch-item">
+            <img src="../assets/akira_sketch1.JPG" alt="Akira sketch 1" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/akira_sketch2.JPG" alt="Akira sketch 2" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/akira_sketch3.JPG" alt="Akira sketch 3" />
+          </div>
+        </div>
+        <b> Winston's sketches </b> <br/>
+        <div class="sketch-container">
+          <div class="sketch-item">
+            <img src="../assets/winston_sketch1.JPG" alt="Winston sketch 1" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/winston_sketch2.JPG" alt="Winston sketch 2" />
+          </div>
+        </div>
+        <b>Fanny's sketches </b> <br/>
+        <div class="sketch-container">
+          <div class="sketch-item">
+            <img src="../assets/fanny_sketch1.jpg" alt="Fanny sketch 1" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/fanny_sketch2.jpg" alt="Fanny sketch 2" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/fanny_sketch3.jpg" alt="Fanny sketch 3" />
+          </div>
+          <div class="sketch-item">
+            <img src="../assets/fanny_sketch_mascot.jpg" alt="Fanny mascot sketch" />
+          </div>
+        </div>
+      </div>
+  <div class="sectioncard">
+
+    <h2> Our Design </h2>
+    <p>We went through many different iterations of our design for Aster Health. Considering the emphasis on innovative design for form completion and collecting information, most of our sketches are experimental ways of thinking about playful design. </p>
+    <p class="question">
+      What design decisions led us to our final design?
     </p>
-    <h4>Theme:</h4>
-    <p>My theme I’m choosing to make my website on is posts about fishing spots/seasons in Washington State. For filtering, I will have a main page of different posts that you can filter by species of fish and what season it is. For sort I will do it by date posted. I will accomplish this by maintaining a list of objects of my fishing posts, and I can filter and sort this list before I map it to react components. </p>
-    <h4>Factors to implement:</h4>
-    <p>Honestly, I thought every feature in the Competitive Comparison Chart worked well, when implemented by their respective companies. However, I will focus on these three.</p>
-    <ol>
-      <li>I think the most important thing for me is being able to favorite content on whatever page you are in, especially while browsing. I would implement this by having a favorite button wherever content is displayed.</li>
-      <li>Second most important is filtering and sorting not only in the main posts but also in the favorites section, which I will implement with drop down menus.
+    <p>As you can see in some of our sketches, our first iteration of designs often focus on adding functionality or flair to a simple integrated form completion process. After encouragement from Talie, we also thought about more "crazy" ways to achieve our goals, including integrating games surrounding form completion and bringing in a factor of competition and urgency. We also explored the route of making a mascot for the app, the idea being that an animal mascot might endear the user and make them feel more comfortable.  </p>
+    <p class="question">
+      How did we update our design based on our peer's critiques?
+    </p>
+    <p>
+      In the peer critiques, we received positive feedback about the risks we took in making novel designs to engage the user, like our gamification and our mascot. However, we also received constructive feedback that our padding and alignment often needed to be touched up. Also, we also received feedback that our notification messages and affirmation messages being capitalized was jarring especially when talking about sensitive subjects like a baby inside a patient's body. We adjusted accordingly by fixing our padding and capitalization. We also received feedback from our client that in stressful times, expecting mothers would not want games or a mascot necessarily, so we decided to focus on our other features like our progress bars, chatbot, and notifications in the hifi prototype. We also listened to feedback about our affirmation messages taking a smaller role by making them a popup rather than a new page.
+    </p>
+    <p class="question">
+      What parts did we keep from different sketches and why?
+    </p>
+    <p>After feedback from our partners at Aster Health, it became clear that users going through a pregnancy, both an emotional and difficult time, would prioritize efficient and clear design over playful engagement features. We therefore decided to keep only the most sober and efficient features we had sketched, such as the modular presentation of our forms, including a process bar and indications of how many minutes are left. We also kept the feature of notifications that enable our users to answer directly in the notifications tab, similar to a WhatsApp notifications (with a press and hold, type answer in notification feature). Another feature we kept were the possibility to put in information through voice notes and uploading forms. Both of these option should make form submission and information collection more accessible our users and save time and energy. Finally, some of the chat components from our initial sketches were considered when our collaborators suggested incorporating a conversational way of filling the forms. We got very positive feedback for those features from both peers and Aster, which is why they are included. </p>
+    <p class="question">
+      Completing the visual style guide
+    </p>
+    <p>
+      <b>See more details in our <a
+        href="https://www.figma.com/file/wqTcOLbRC1vZabKsnEtSFe/Aster-Hi-fi?type=design&mode=design&t=qC5YflDIi6ehoLjo-1">
+        Figma!</a> </b> <br><br>
+Blue: <br>
+<i>We chose blue to create a sense of lightness and tranquility for the user. Blue is also a highly accessible color and we used differing shades of blue and a gradient in order to establish visual hierarchy. </i>
+<br><br>
+White: <br>
+<i>We use white to create accents against the blue</i>
+<br><br>
+Font color: dark green <br>
+<i>We use the classic aster font color that also contrasts against the light blue on the screen.  </i>
+<br><br>
+Font: Lato <br>
+<i>We used Leto as a san serif font is rounded and has class proportions that create a sense of harmony. This is also very similar to the font Aster had initially used so we wanted to create harmony with their current designs.  </i>
+<br><br>
+Buttons: <br>
+<i>Our buttons are long, rounded, dark blue and cover the screen for easy accessibility. </i>
+<br><br>
+Nav Bar: <br>
+<i>Nav Bar is pink in order to be visible and create contrast against the dark blue gradient.  </i>
+<br><br>
+Incomplete forms: <br>
+<i>All incomplete forms appear as red to make it clear to the user what is incomplete. </i>
+<br><br>
+Aster assistant icons: <br>
+<i>We put icons of notifications and call on the top right corner in white to lead the user to look towards this option. In the chat button we also add a voice note icon in a lighter circle with a blue microphone to attract the eye towards it </i>
+
+    </p>
+    <p class="question">
+      How our designs lead to the intended impact?
+    </p>
+    <p>Our design leads to the intended impact because we prioritized features that communicate transparency, encouragement and efficiency. </p>
+
+  </div>
+
+  <div class="figmacard">
+    <h2> LO-FI and HI-FI Prototypes</h2>
+    <p>
+      <b>
+      <a
+        href="https://www.figma.com/file/oHX0pe4oQQarWlOyyvpd7q/Aster-Wireframe?type=design&mode=design&t=qC5YflDIi6ehoLjo-1">
+        Click here to view our LO-FI FIGMA</a></b>
+    </p>
+
+    <p>
+      <b>
+      <a
+        href="https://www.figma.com/file/wqTcOLbRC1vZabKsnEtSFe/Aster-Hi-fi?type=design&mode=design&t=qC5YflDIi6ehoLjo-1">
+        Click here to view our  HI-FI FIGMA</a></b>
+    </p>
+  </div>
+  <div class="sectioncard">
+    <h2> Takeaways </h2>
+    <p>
+      Our client, Aster, highlighted several positive features and key takeaways from our final prototype. Fifi, the
+      founder, expressed her appreciation for our swift adjustment following her initial feedback.
+
+    </p>
+    <h2> Features they will implement </h2>
+    <p>
+      <li> Aster Assitant: we integrated a chatbot named Aster Assistant, which allows users to interact via chat,
+        calls, or voice messages to complete forms. Fifi remarked that we effectively made Aster feel like a "warm
+        entity" and succeeded in humanizing the company </li>
+      <li> Time-Left Feature: aims to display how much time a user has remaining, helping to alleviate feelings of
+        overwhelm by showing limits on task duration. This had not been previously considered by the company!</li>
+      <li> Scan Feature: scan feature targets both patients and healthcare providers, enabling them to scan existing
+        forms and avoid redundant tasks.This had not been considered previously. </li>
+      <li>Lock screen question completion </li>
+      <li> Simple and straightforward design </li>
+      <li> Accessible color palette </li>
+
+    <h2> Things to improve </h2>
+    <p>
+
+      <li> The affirmations page, though in good faith, may be patrionising and waste user’s time.</li>
+      <li> Restructuring the information architecture on the checklist page in order to prevent a user being overwhelmed
       </li>
-      <li>After that is utilizing tags in posts to make the posts easier to scan for useful information.
+      <li> Adding shared features for instance a shared signature or shared information across forms
       </li>
-    </ol>
-    <h4>Final Website:</h4>
-    <img alt="Newly made fishing website" src="assets/fishing-spots.png">
-    <a href="https://washington-fishing-spots.vercel.app/">Final Website Link</a>
-  </body>
+    </p>
+
+    <h2> What did we learn? </h2>
+
+    <p>This was our team’s first attempt at prototyping and thus our final deliverable was not up to par. We would like
+      to improve our autolayering and information architecture to modify our design from medium-level fidelity to high
+      fidelity.
+      We also recognised that design features should be out of the box! While we were hesitant to add the gamification
+      feature initially we are glad we did because it helped us pivot to other unique ideas such as timers and scanning.
+      We recognise not all unique features will be well-recieved but we were encouraged to think broad!
+    </p>
+
+
+    </p>
+  </div>
+  </div>
+
+
+
+  <script>
+    function toggleCardInfo(card) {
+      const additionalInfo = card.querySelector('.additional-info');
+      additionalInfo.style.display = (additionalInfo.style.display === 'none') ? 'block' : 'none';
+    }</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
 
 </html>
