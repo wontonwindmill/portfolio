@@ -240,10 +240,16 @@ a {
 ul {
   padding: 0;
 }
+.spacer {
+  height: 2em;
+}
 
-
+.w-full {
+  width:100%;
+}
 table {
   width: 100%;
+  background: white;
   border-collapse: collapse;
   margin-bottom: 30px;
 }

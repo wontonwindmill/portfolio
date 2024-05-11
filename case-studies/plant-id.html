@@ -1,91 +1,82 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Development Handin</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <h2>Development Project</h2>
-    <p>In this project, I am completing a competitive analysis on three websites with a favoriting function and then using that information to make my own website with a favoriting function.</p>
-    <h4>Reference websites:</h4>
-    <div class="website-links">
-      <a href="https://www.nike.com/">Nike</a>
-      <a href="https://www.wta.org/">Washington Trails Association</a>
-      <a href="https://www.pinterest.com/">Pinterest</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winston's Portfolio</title>
+
+  <link rel="stylesheet" href="../css/case-study-styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="../index.html">Winston Hackett</a>
+    <div class="nav-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../docs/resume.pdf">Resume</a>
     </div>
-    <h4>Competitive Analysis Comparison Table:</h4>
-    <table>
-      <tr>
-        <th>-</th>
-        <th>Nike</th>
-        <th>Washington Trails Association</th>
-        <th>Pinterest</th>
-      </tr>
-      <tr>
-        <td>Suggests more items on favorite's page</td>
-        <td>x</td>
-        <td>x</td>
-        <td>o</td>
-      </tr>
-      <tr>
-        <td>Favoriting while browsing</td>
-        <td>o</td>
-        <td>x</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>Filtering in favorite's page </td>
-        <td>o</td>
-        <td>x</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>Home page recommends content based on favorites/prior activity</td>
-        <td>o</td>
-        <td>o</td>
-        <td>x</td>
-      </tr>
-      <tr>
-        <td>Home feed groups content by categories</td>
-        <td>x</td>
-        <td>o</td>
-        <td>o</td>
-      </tr>
-      <tr>
-        <td>Tags in posts</td>
-        <td>o</td>
-        <td>x</td>
-        <td>o</td>
-      </tr>
-    </table>
-    <h4>Summary Paragraph:</h4>
-    <p>
-      All three websites were reasonably well done, with different strengths and weaknesses that influence users. For Nike, the site doesn't allow favoriting while browsing, only after clicking on a product card and also in the cart. This seems like it would encourage users to focus more on finding an individual product they like and navigating to it, rather than saving multiple for later while browsing. Nike also displays content in categories like based off of sport on the homepage, without considering the user's favorite content. To me, this creates a design that funnels users towards products that they already know they want. This makes sense for encouraging users to quickly find the product they want and buy it. The favoriting function seems to be a backup if users have second thoughts, allowing them to put the item they like away to buy later, in either the product page or the cart page. In Nike's case, favoriting seems to be more of a “buy later” function, meant to not interfere with the primary buying experience. Curiously, they do have recommendations in the favorites page, maybe because if a user has already favorite items, they are more suited than the regular user to browse and see further recommendations. For the Washington Trails Association (WTA), favoriting is available nearly everywhere you can see a hike's information. There are also good suggestions on the favorite's page. This seems to encourage users to browse many hikes, and favorite lots that look good. WTA also has tags on the posts that make it even easier to scan and find relevant posts. Pinterest also seems to do browsing well, with favorite's page having pretty limited functionality mostly acting as a history. Instead, the favorites are used to improve the main page, which recommends off of favorited items. Pinterest also allows lots of favoriting, so it is encouraged and an important part of the main feed experience.
-    </p>
-    <h4>Theme:</h4>
-    <p>My theme I’m choosing to make my website on is posts about fishing spots/seasons in Washington State. For filtering, I will have a main page of different posts that you can filter by species of fish and what season it is. For sort I will do it by date posted. I will accomplish this by maintaining a list of objects of my fishing posts, and I can filter and sort this list before I map it to react components. </p>
-    <h4>Factors to implement:</h4>
-    <p>Honestly, I thought every feature in the Competitive Comparison Chart worked well, when implemented by their respective companies. However, I will focus on these three.</p>
-    <ol>
-      <li>I think the most important thing for me is being able to favorite content on whatever page you are in, especially while browsing. I would implement this by having a favorite button wherever content is displayed.</li>
-      <li>Second most important is filtering and sorting not only in the main posts but also in the favorites section, which I will implement with drop down menus.
-      </li>
-      <li>After that is utilizing tags in posts to make the posts easier to scan for useful information.
-      </li>
-    </ol>
-    <h4>Final Website:</h4>
-    <img alt="Newly made fishing website" src="assets/fishing-spots.png">
-    <a href="https://washington-fishing-spots.vercel.app/">Final Website Link</a>
-  </body>
+  </div>
+  <!-- making a wrapper element -->
+  <div class="wrapper">
+    
+    <header>
+
+      <h1> Washington State Native Plant ID</h1>
+      <div class="devlink">
+        <!-- <a href="dev-ashy-gamma.vercel.app" class="menu" aria-label="menu button">Vercel Website</a> -->
+      </div>
+
+    </header>
+    <div class="spacing">
+      <div class="sectioncard">
+        <h2> Overview </h2>
+        <p>
+          For this project, our goal was to create a deep learning model that learn to identify 10 native plants in Washington State.
+        </p>
+      </div>
+      <div class="sectioncard">
+        <h2> First Attempt to Get Data </h2>
+        <p>
+          Our first attempt was to get herbarium specimen data from the University of Washington. We wanted to use Herbarium records since they are standarized with good labels that make deep learning possible. Unfortunately, this didn't work out as the database housing the records was down. Although we couldn't use herbarium records, we decided to still pursue a similar approach.
+        </p>
+        <h2> Successful Attempt to Get Data </h2>
+        <p>
+          Our second attempt was to pivot from herbarium specimen data to images of live plants, taken by citizen scientists on the app iNaturalist. This was more risky since not all of the images are verified with their labeling. We were able to get enough quality data however, with looking at just 10 plants. 
+        </p>
+        <h2> Preprocessing the Data</h2>
+        <p>
+          We then had to download our data and get it into folders for each species, which we could then load into a tensorflow dataset with each folder as the classes. We standarized the image sizes as well. One advantage of the non herbarium images is we didn't have to filter out physical labels included in the images. 
+        </p>
+        <h2> Building a Model</h2>
+        <p>
+          We then built a model trying different layers of mostly convolutional layers and linear layers, but we also tested to see what layers would help reduce overfit like batch normalization.
+        </p>
+        <h2> Conclusion</h2>
+        <p>
+          We were surprised by how well the model was able to generalize its learning. It performed especially well on certain species, which makes us curious about how it would perform if trained on more species and more data.
+        </p>
+        <h2> Final Poster Summarizing Results</h2>
+        <img class="w-full" src="../assets/plant-id.png" alt="Plant Id Poster">
+      </div>
+  <div class="spacer"></div>
+  
+  </div>
+
+  </div>
+</body>
 
 </html>
